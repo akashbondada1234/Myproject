@@ -1,0 +1,107 @@
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 60px;
+    background-color: #e69316;
+    margin-bottom: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: rgb(14, 218, 93);
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    color: red;
+  }
+  
+  nav a:active {
+    color: green;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  
+  li {
+    margin: 5px 0;
+  }
+  
+  ul a {
+    text-decoration: none;
+    color: blue;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  ul a:hover {
+    color: red;
+  }
+  
+  ul a:active {
+    color: green;
+  }
+  
+
+  h1 {
+    font-family: Arial, sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-align: justify;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  .card {
+    border: 1px solid gray;
+    padding: 20px;
+    margin: 10px;
+    max-width: 300px;
+    background-color: #f2f2f2;
+  }
+  
+ 
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin: 20px 0;
+  }
+  
+  .gallery img {
+    width: auto;
+    height: auto;
+  }
+  
+ 
+  @media (max-width: 100px) {
+    .gallery {
+      grid-template-columns: 1fr;
+    }
+  }
+
+
+  .color-btn {
+    background-color: rgb(222, 34, 13);
+    color:rgb(34, 32, 32);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .color-btn:hover {
+    background-color: rgb(9, 8, 8);
+  }
+  

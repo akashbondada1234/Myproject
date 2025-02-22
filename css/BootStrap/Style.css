@@ -1,0 +1,95 @@
+/* Basic Reset & Body */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Navbar GUCCI text */
+  .gucci-navbar-logo {
+    font-family: "Times New Roman", serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+  }
+  
+  /* Shrink or fade out the nav logo after scrolling */
+  .gucci-navbar-logo.shrink {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  
+  /* Hero Section */
+  .hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden; /* Hide overflow while scaling or expanding text */
+    background-image: url('https://media.gucci.com/dynamic/b3c8/x5H5ZkU7LOM9YPkiO+Nq9g4GJbx6msXG7fd7AzHdqaOYGOdEuDEPu9SDyJJgpYuuYH1h253YAPd5UW1xWKV2nXXClZPsxWz9bLdjihHFigx0r7s273_3P7gRykDtVFJhwrgswG6_yFcUKfGSBCIS1_XoTfkiduMVkdANI28qgG+YZdr5KuYVGINFAz6X2bB7K8QH5HGQCptsxaBSMz_eoaH+r1BI1qwkWKKmcQPoGIbyBpLvlamrs7hiCITiuM5tP1QLy4M_AVKEOcSv57d_TilztW3A4N8etzTdwqfUFnmzH+bocnaRwaeG22QXWv1TOpZ7DlsuA4GiZcnxN7VqvckhUZpAB3BkP3H46SW_UIk=/HP_Hero-FullBleed-Desktop_Gucci-TierII-SS25-Feb25-4135-HW-GUCCI-19_001_Default.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  /* Optional overlay for contrast */
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Ensure hero text is above the overlay */
+  .hero .container {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    text-align: center;
+  }
+  
+  /* Large GUCCI text that expands across the screen */
+  .gucci-hero-logo {
+    position: absolute;
+    top: 35%; /* Adjust to place it behind or around your hero text */
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: "Times New Roman", serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1rem; /* big spacing to help fill horizontal space */
+    color: #fff;
+    white-space: nowrap; /* keep text on one line */
+    overflow: visible;
+    transition: opacity 0.5s ease, transform 0.5s ease, font-size 0.5s ease, letter-spacing 0.5s ease, margin 0.5s ease;
+    font-size: 3rem; /* start smaller */
+    opacity: 0;
+  }
+  
+  /* Hidden by default (initial state) */
+  .hidden {
+    opacity: 0;
+    transform: translateX(-50%) scale(0.8);
+  }
+  
+  /* Show the hero GUCCI text big & wide */
+  .show {
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+    font-size: 8rem;       /* Very large font */
+    letter-spacing: 2rem;  /* Increase spacing to stretch horizontally */
+  }
+  
+  /* Footer */
+  footer p {
+    margin: 0;
+  }
+  

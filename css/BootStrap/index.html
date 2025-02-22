@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Professional Bootstrap Website</title>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+  >
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <!-- Small text in the navbar -->
+      <a class="navbar-brand" href="#">
+        <span id="navLogo" class="gucci-navbar-logo">GUCCI</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section with Fullscreen Background Image -->
+  <header id="home" class="hero d-flex align-items-center justify-content-center text-center text-white">
+    <!-- Large text, initially hidden, to expand across the screen -->
+    <h1 id="heroLogo" class="gucci-hero-logo hidden">GUCCI</h1>
+
+    <div class="container">
+      <h1>Welcome to My Professional Website</h1>
+      <p>Your success starts here</p>
+      <a href="#about" class="btn btn-primary">Explore More</a>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="container my-5">
+    <div class="row">
+      <div class="col-md-6">
+        <h2>About Us</h2>
+        <p>We provide top-notch solutions to help your business grow. Our expert team ensures the best results.</p>
+      </div>
+      <div class="col-md-6">
+        <img src="https://img.freepik.com/free-vector/corporate-meeting-employees-cartoon-characters-discussing-business-strategy-planning-further-actions-brainstorming-formal-communication-seminar_335657-284.jpg?t=st=1740202815~exp=1740206415~hmac=f6082c93a7ef6df43fc22cbe9813a3d8ac234c5db9404484238511821539bb61&w=900" class="img-fluid rounded" alt="About Us">
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="bg-light py-5">
+    <div class="container text-center">
+      <h2>Our Services</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <i class="fas fa-laptop-code fa-3x"></i>
+          <h4>Web Development</h4>
+          <p>We build modern and responsive websites.</p>
+        </div>
+        <div class="col-md-4">
+          <i class="fas fa-chart-line fa-3x"></i>
+          <h4>Digital Marketing</h4>
+          <p>Boost your brand with our marketing strategies.</p>
+        </div>
+        <div class="col-md-4">
+          <i class="fas fa-mobile-alt fa-3x"></i>
+          <h4>App Development</h4>
+          <p>Get mobile applications tailored for your needs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="container my-5 text-center">
+    <h2>Our Portfolio</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <!-- Link wrapping an image for "Project 1" -->
+        <a href="/us/en/ca/men/bags-for-men-c-men-bags" target="_blank" rel="noopener noreferrer">
+          <img src="portfolio1.jpg" class="img-fluid rounded" alt="Project 1">
+        </a>
+      </div>
+      <div class="col-md-4">
+        <img src="portfolio2.jpg" class="img-fluid rounded" alt="Project 2">
+      </div>
+      <div class="col-md-4">
+        <img src="portfolio3.jpg" class="img-fluid rounded" alt="Project 3">
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-dark text-white py-5 text-center">
+    <h2>Contact Us</h2>
+    <form class="container">
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <input type="text" class="form-control" placeholder="Your Name">
+        </div>
+        <div class="col-md-6 mb-3">
+          <input type="email" class="form-control" placeholder="Your Email">
+        </div>
+      </div>
+      <textarea class="form-control mb-3" rows="4" placeholder="Your Message"></textarea>
+      <button type="submit" class="btn btn-primary">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2025 MyBrand. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>
