@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ID{
+            color: hotpink;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dynamically Add and Delete List Items</h1>
+<input type="text" id="iteminput" placeholder="Enter a item"/>
+<button id= "additemButton"  onclick="addTodo()">Add Item</button>
+<ul id="itemList"></ul>
+<script>
+    let inputEle = document.getElementById("iteminput")
+    let buttonEle = document.getElementById("additemButton")
+    let ulEle = document.getElementById("itemList")
+   
+    function addTodo(){
+        if(inputEle.value!==""){
+            let liEle = document.createElement("li")
+            liEle.textContent=inputEle.value;
+            let delbutton=document.createElement("button")
+            delbutton.textContent="Delete"
+            delbutton.style.backgroundColor="green"
+            delbutton.classList.add("ID")
+            liEle.appendChild(delbutton) 
+            delbutton.onclick = ()=>{
+                liEle.remove()
+            }           
+            ulEle.appendChild(liEle)
+
+        }
+        inputEle.value=""
+
+    }
+</script>
+</body>
+
+
+</html>
